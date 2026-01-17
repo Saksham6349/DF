@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => {
   return {
     base: "/DF/",   // 👈 REQUIRED for GitHub Pages
 
+    build: {
+      outDir: "docs"   // 👈 build goes into docs instead of dist
+    },
+    
     server: {
       port: 3000,
       host: '0.0.0.0',
